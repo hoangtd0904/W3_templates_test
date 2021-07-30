@@ -106,16 +106,10 @@ html {
     background-color: #ccc;
 }
 
-#header .logo {}
-
-#header .navbar {}
-
 .navbar__list {
     list-style: none;
     display: flex;
 }
-
-.navbar__item {}
 
 #slider {
     max-width: 1500px;
@@ -149,8 +143,6 @@ html {
     opacity: .75;
 }
 
-#content {}
-
 #content h3 {
     font-size: 24px;
     font-weight: 400;
@@ -175,16 +167,10 @@ html {
     line-height: 1.5;
 }
 
-#content .about {}
-
 .about__desc p {
     margin: 16px 0;
     line-height: 1.4;
 }
-
-.about__team {}
-
-.about__member {}
 
 .about__member-pos,
 .about__member-img {
@@ -212,8 +198,6 @@ html {
 .about__member-btn:hover {
     background-color: #ccc;
 }
-
-#content .contact {}
 
 .contact__form input {
     width: 100%;
