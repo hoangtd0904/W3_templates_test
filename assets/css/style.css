@@ -1,0 +1,292 @@
+/* common */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* filter: grayscale(50%); */
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    filter: grayscale(75%);
+}
+
+
+/* custom */
+
+.fs-64 {
+    font-size: 64px;
+}
+
+.my-32 {
+    margin: 32px 0;
+}
+
+.gf-50 {
+    background-color: #f2e1e1;
+}
+
+.w-50 {
+    width: 50vw;
+}
+
+
+/* main */
+
+#heading {
+    min-height: 100vh;
+    background: url('../img/bg/wedding_couple.jpg') no-repeat center/ cover;
+}
+
+.form__heading h1,
+.invited h1,
+.invited h2,
+.header h1,
+.header h2 {
+    margin: 10px 0;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.invited h2,
+.header h2 {
+    font-size: 30px;
+}
+
+div.navbar {
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+
+div.navbar:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.navbar-item:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.navbar-item:last-child:hover {
+    background: #000;
+}
+
+.navbar-item:last-child:hover .navbar__link {
+    color: #fff;
+}
+
+.navbar__link {
+    display: block;
+    color: #000;
+}
+
+.navbar__link:hover {
+    color: #000;
+}
+
+#content {
+    background-color: #ffdddd;
+}
+
+.content-item {
+    padding: 64px 0;
+}
+
+.item-heading h2 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #757575;
+}
+
+div .item-img {
+    padding: 64px 0;
+}
+
+.item-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#jane-john {}
+
+.item-desc p {
+    line-height: 2;
+    margin: 0;
+}
+
+.item-btn a {
+    padding: 12px 0;
+    background: #000;
+    line-height: 2;
+    font-size: 18px;
+    color: #fff;
+}
+
+.item-btn a:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.invited {
+    min-height: 100vh;
+    background: url('../img/bg/flowers.jpg') no-repeat center/ cover;
+}
+
+#wedding {}
+
+.wedding-head {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+#contact .item-heading h2 {
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.item-sub-heading {
+    padding: 18px 0;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+.contact-btn button {
+    padding: 0 60px;
+    font-size: 24px;
+    line-height: 2;
+    color: #fff;
+    background: #f44336;
+    opacity: .6;
+}
+
+.contact-btn button:hover {
+    color: #000;
+    background: #ccc;
+    opacity: 1;
+}
+
+
+/* contact form */
+
+#contact-form {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 100px 0 0;
+}
+
+.contact-form__main {
+    padding: 32px;
+    background: #fff;
+    width: 600px;
+    margin: auto;
+    animation: formIn ease .5s;
+}
+
+.form__heading h1 {
+    font-size: 36px;
+}
+
+.form__input input {
+    display: block;
+    width: 100%;
+}
+
+.form__btn button {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-s {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.btn-d {
+    background: #f44336;
+    color: #fff;
+}
+
+.form__btn button:hover {
+    background: #ccc;
+}
+
+
+/* footer */
+
+#footer {
+    padding: 16px 0;
+    background: #000;
+}
+
+.copyright a {
+    color: #fff;
+}
+
+.copyright a:hover {
+    color: #4CAF50;
+}
+
+.footer {
+    /* margin-bottom: 32px; */
+}
+
+
+/* responsive */
+
+
+/* tablet */
+
+@media (max-width: 760px) {
+    .mx-0 {
+        margin: 0;
+    }
+    #contact-form {
+        padding: 50px 0 0;
+    }
+    .contact-form__main {
+        width: 500px;
+    }
+}
+
+
+/* phone */
+
+@media (max-width: 600px) {
+    #contact-form {
+        padding: 50px 0 0;
+    }
+    .contact-form__main {
+        width: auto;
+        margin: 0 10px;
+    }
+}
+
+
+/* animation */
+
+@keyframes formIn {
+    from {
+        transform: scale(.2, .2);
+        opacity: .7;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}

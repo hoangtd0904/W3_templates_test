@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="heading" class="d-flex align-items-center justify-content-center">
+            <div class="header w-50">
+                <h1 class="text-white text-center fs-64">Jane & John</h1>
+                <h2 class="text-white text-center">Are getting married</h2>
+                <h2 class="text-white text-center"><b class="">17.07.2017</b></h2>
+            </div>
+            <div class="navbar p-0 fixed-bottom d-none d-md-block">
+                <ul class="navbar list-unstyled w-100 px-3 py-2 m-0">
+                    <li class=" navbar-item w-25 text-center"><a href="#" class=" navbar__link text-decoration-none px-3 py-2">Home</a></li>
+                    <li class=" navbar-item w-25 text-center"><a href="#couple" class=" navbar__link text-decoration-none px-3 py-2">Jane & John</a></li>
+                    <li class=" navbar-item w-25 text-center"><a href="#wedding" class=" navbar__link text-decoration-none px-3 py-2">Wedding</a></li>
+                    <li class=" navbar-item w-25 text-center"><a href="#contact" class=" navbar__link text-decoration-none px-3 py-2">RSVP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <!-- jane & john -->
+            <div id="couple" class="px-3 content-item gf-50">
+                <!-- common heading -->
+                <div class="item-heading">
+                    <h2 class="text-center mx-md-2 ">Jane & John</h2>
+                </div>
+                <!-- img -->
+                <div class="mx-md-2  item-img">
+                    <img src="./assets/img/main/wedding_couple2.jpg" alt="" class=" ">
+                </div>
+                <!-- text desc -->
+                <div class="item-desc my-3 mx-md-2 ">
+                    <p class="fst-italic">
+                        You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <br>
+                <!-- button -->
+                <div class="item-btn my-3 text-center">
+                    <a href="#wedding" class="btn px-4">Wedding Details</a>
+                </div>
+            </div>
+            <!-- invited -->
+            <div class="invited px-3 d-flex flex-column justify-content-center align-items-center text-capitalize">
+                <h1 class="text-white text-center fs-64 w-50">You Are Invited</h1>
+                <h2 class="text-white text-center w-50">Of course..</h2>
+            </div>
+            <!-- wedding -->
+            <div id="wedding" class="content-item px-3 gf-50">
+                <div class="item-heading">
+                    <h2 class="text-center text-uppercase mx-md-2 ">The wedding</h2>
+                </div>
+                <!-- img -->
+                <div class="mx-md-2  item-img">
+                    <img src="./assets/img/main/wedding_location.jpg" alt="" class=" ">
+                </div>
+                <!-- text desc -->
+                <div class="row item-desc my-3 mx-md-2 ">
+                    <div class="col-md-6 col-12 text-center">
+                        <h2 class="wedding-head">When</h2>
+                        <p class="my-3">Wedding Ceremony - 2:00pm</p>
+                        <p class="my-3">Reception & Dinner - 5:00pm</p>
+                    </div>
+                    <div class="col-md-6 col-12 text-center">
+                        <h2 class="wedding-head">Where</h2>
+                        <p class="my-3">Some place, an address</p>
+                        <p class="my-3">Some where, some address</p>
+                    </div>
+                </div>
+            </div>
+            <!-- form -->
+            <div id="contact" class="content-item px-3">
+                <div class="item-heading">
+                    <h2 class="text-uppercase text-center">
+                        Hope you can make it
+                    </h2>
+                </div>
+                <div class="item-sub-heading">
+                    <p class="text-center">Kindly Respond By January, 2017</p>
+                </div>
+                <div class="my-4 text-center contact-btn">
+                    <button id="contact__btn" class="btn py-2 shadow-none">RSVP</button>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer" class="">
+            <p class="copyright text-white text-center my-3">Powered by <a href="#" class="">w3.css</a></p>
+        </div>
+        <div class="d-none d-md-block footer ">&nbsp</div>
+    </div>
+
+    <!-- form -->
+    <div id="contact-form" class="d-none">
+        <div class="contact-form__main shadow ">
+            <div class="form__heading mx-3">
+                <h1 class="text-uppercase text-center">Can you come?</h1>
+            </div>
+            <p class="m-3 text-center">We really hope you can make it.</p>
+            <div class="form__input mx-3">
+                <input type="text" name="" id="" class="p-2" placeholder="Name(s)">
+            </div>
+            <p class="fst-italic m-3 text-center">Sincerely, John & Jane</p>
+            <div class="row form__btn mx-3">
+                <div class="col-md-6 p-0">
+                    <button class="btn btn-s shadow-none px-3 py-2 text-center js-form-exit">Going</button>
+                </div>
+                <div class="col-md-6 p-0">
+                    <button class="btn btn-d shadow-none px-3 py-2 text-center js-form-exit">Can't come</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let contactBtn = document.getElementById('contact__btn');
+        let contactForm = document.getElementById('contact-form');
+        let formExit = document.getElementsByClassName('js-form-exit')
+
+        contactBtn.onclick = () => {
+            contactForm.classList.replace('d-none', 'd-block');
+        }
+
+        for (let i = 0; i < formExit.length; i++) {
+            const element = formExit[i];
+            element.onclick = () => {
+                contactForm.classList.replace('d-block', 'd-none');
+            }
+        }
+    </script>
+</body>
+
+</html>
