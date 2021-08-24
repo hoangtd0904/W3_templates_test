@@ -1,292 +1,338 @@
 /* common */
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    /* filter: grayscale(50%); */
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
     scroll-behavior: smooth;
 }
 
-img {
-    filter: grayscale(75%);
+body {
+    background: #f1f1f1;
 }
 
 
-/* custom */
+/* special */
 
-.fs-64 {
-    font-size: 64px;
+.c-pointer:hover {
+    cursor: pointer !important;
 }
 
-.my-32 {
-    margin: 32px 0;
+.break-line {
+    border: 1px solid #eee;
+    margin: 20px 0;
 }
 
-.gf-50 {
-    background-color: #f2e1e1;
+
+/* spacing */
+
+.p-12 {
+    padding: 12px !important;
 }
 
-.w-50 {
-    width: 50vw;
+.px-12 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+.py-12 {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.ps-12 {
+    padding-left: 12px !important;
+}
+
+.ps-12 {
+    padding-right: 12px !important;
+}
+
+.pt-12 {
+    padding-top: 12px !important;
+}
+
+.pb-12 {
+    padding-bottom: 12px !important;
 }
 
 
 /* main */
 
-#heading {
-    min-height: 100vh;
-    background: url('../img/bg/wedding_couple.jpg') no-repeat center/ cover;
-}
 
-.form__heading h1,
-.invited h1,
-.invited h2,
-.header h1,
-.header h2 {
-    margin: 10px 0;
-    line-height: 1.5;
-    letter-spacing: 4px;
-    font-weight: 400;
-}
+/* header */
 
-.invited h2,
-.header h2 {
-    font-size: 30px;
-}
-
-div.navbar {
-    background: rgba(255, 255, 255, 0.75);
-    z-index: 1;
-}
-
-div.navbar:hover {
-    background: rgba(255, 255, 255, 1);
-}
-
-.navbar-item:hover {
-    background: #ccc;
-    cursor: pointer;
-}
-
-.navbar-item:last-child:hover {
+.header__navbar {
     background: #000;
 }
 
-.navbar-item:last-child:hover .navbar__link {
+.header a {
     color: #fff;
 }
 
-.navbar__link {
-    display: block;
+.header a:hover {
     color: #000;
+    background: #ccc;
 }
 
-.navbar__link:hover {
-    color: #000;
+.header__title {
+    padding: 48px 0;
 }
 
-#content {
-    background-color: #ffdddd;
+.header__title h1 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
 }
 
-.content-item {
-    padding: 64px 0;
-}
-
-.item-heading h2 {
-    font-size: 36px;
+.header__title h6 {
     margin: 10px 0;
-    color: #757575;
+    line-height: 24px;
 }
 
-div .item-img {
-    padding: 64px 0;
-}
 
-.item-img img {
+/* slideer */
+
+.slider {
     width: 100%;
-    border-radius: 5px;
 }
 
-#jane-john {}
-
-.item-desc p {
-    line-height: 2;
-    margin: 0;
+.slider__desc {
+    transform: translateY(-50%);
+    letter-spacing: 4px;
 }
 
-.item-btn a {
-    padding: 12px 0;
-    background: #000;
-    line-height: 2;
-    font-size: 18px;
-    color: #fff;
+.slider__desc h2 {
+    font-size: 36px;
+    line-height: 54px;
 }
 
-.item-btn a:hover {
+.slider__desc b {
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: 500;
+}
+
+.slider__desc-btn {
+    border: none;
+    outline: none;
     background: #ccc;
-    color: #000;
-}
-
-.invited {
-    min-height: 100vh;
-    background: url('../img/bg/flowers.jpg') no-repeat center/ cover;
-}
-
-#wedding {}
-
-.wedding-head {
-    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    opacity: .8;
     margin: 10px 0;
-    font-size: 30px;
 }
 
-#contact .item-heading h2 {
-    color: #000;
-    font-weight: 400;
-    letter-spacing: 4px;
-}
-
-.item-sub-heading {
-    padding: 18px 0;
-    letter-spacing: 4px;
-    font-size: 18px;
-}
-
-.contact-btn button {
-    padding: 0 60px;
-    font-size: 24px;
-    line-height: 2;
-    color: #fff;
-    background: #f44336;
-    opacity: .6;
-}
-
-.contact-btn button:hover {
-    color: #000;
-    background: #ccc;
+.slider__desc-btn:hover {
     opacity: 1;
 }
 
 
-/* contact form */
+/* content */
 
-#contact-form {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 100px 0 0;
+.post__heading h3,
+.post__heading h5 {
+    margin: 10px 0;
 }
 
-.contact-form__main {
-    padding: 32px;
+.post__heading h3 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.post__heading h5 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.post__heading-date {
+    opacity: .7;
+}
+
+.post__interacts {
+    margin: 15px 0;
+}
+
+.post__interact:first-child {
+    border: 1px solid #ccc;
+}
+
+.post__interact:last-child {
+    background: #000;
+    color: #fff;
+}
+
+.post__interact-repies {
     background: #fff;
-    width: 600px;
-    margin: auto;
-    animation: formIn ease .5s;
+    color: #000;
 }
 
-.form__heading h1 {
-    font-size: 36px;
+.post__interact:hover {
+    background: #ccc;
+    color: #000;
 }
 
-.form__input input {
-    display: block;
-    width: 100%;
+.post__reply-text h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 0;
 }
 
-.form__btn button {
-    display: block;
-    width: 100%;
-    border-radius: 0;
-    outline: none;
-    box-shadow: none;
+.reply-date {
+    font-size: 15px;
+    opacity: .7;
 }
 
-.btn-s {
-    background: #4CAF50;
-    color: #fff;
+.post__reply-text p {
+    margin: 15px 0;
 }
 
-.btn-d {
-    background: #f44336;
-    color: #fff;
+
+/* side bar */
+
+.about__text h4 {
+    margin: 10px 0;
 }
 
-.form__btn button:hover {
+.about__text p {
+    padding: 15px 0;
+}
+
+.side__heading h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.popular-post-text span:first-child {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.popular-post-text span:last-child {
+    font-size: 15px;
+}
+
+.popular-post {
+    border-bottom: 1px solid #ddd;
+}
+
+.popular-post:last-child {
+    border: none;
+}
+
+.popular-post:hover {
     background: #ccc;
 }
 
+.advertise-content span {
+    line-height: 200px;
+    background: #f1f1f1;
+}
 
-/* footer */
 
-#footer {
-    padding: 16px 0;
+/* tags */
+
+.tags-main {
+    padding: 15px 0;
+}
+
+.tag {
+    font-size: 12px;
+    color: #000;
+    background: #f1f1f1;
+}
+
+.tag-active {
+    font-size: 15px;
+    color: #fff;
     background: #000;
 }
 
-.copyright a {
-    color: #fff;
+
+/* inspiration */
+
+.inspiration-img {
+    margin: 15px 0;
 }
 
-.copyright a:hover {
-    color: #4CAF50;
+
+/* follow */
+
+.follow-content i {
+    font-size: 24px;
+}
+
+.follow-content i:hover {
+    opacity: .6;
+}
+
+
+/* subscribe */
+
+.subscribe-content p {
+    padding: 15px 0;
+}
+
+.subscribe-btn {
+    color: #fff;
+    background: #f44336;
+    border: none;
+    outline: none;
+}
+
+.subscribe-btn:hover {
+    color: #000;
+    background: #ccc;
 }
 
 .footer {
-    /* margin-bottom: 32px; */
+    padding: 32px;
+    background: #616161;
+}
+
+.footer>a {
+    color: #fff;
+    background: #000;
+    padding: 12px 0;
+}
+
+.footer>a:hover {
+    color: #000;
+    background: #ccc;
+}
+
+.sub-pop-content p,
+.footer p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+
+/* subscribe popup */
+
+.sub-pop-container {
+    z-index: 9999;
+    background: rgba(0, 0, 0, .6);
+}
+
+.sub-pop-content {
+    width: 60%;
+    padding: 32px;
+    margin: auto;
 }
 
 
 /* responsive */
 
-
-/* tablet */
-
-@media (max-width: 760px) {
-    .mx-0 {
-        margin: 0;
-    }
-    #contact-form {
-        padding: 50px 0 0;
-    }
-    .contact-form__main {
-        width: 500px;
-    }
-}
-
-
-/* phone */
-
-@media (max-width: 600px) {
-    #contact-form {
-        padding: 50px 0 0;
-    }
-    .contact-form__main {
-        width: auto;
-        margin: 0 10px;
-    }
-}
-
-
-/* animation */
-
-@keyframes formIn {
-    from {
-        transform: scale(.2, .2);
-        opacity: .7;
-    }
-    to {
-        transform: scale(1, 1);
-        opacity: 1;
+@media screen and (max-width: 768px) {
+    .sub-pop-content {
+        width: 95%;
     }
 }
